@@ -46,7 +46,20 @@ def insertInto(nome,args,dados):
     s=f"insert into {nome} ({args}) values ({p})"
     cur.executemany(s,dados)
     conn.commit()
-def toArray(file):
+def toArray(arquivo):
+    lista = []
+    for linha in arquivo:
+        valor = linha.split(",")
+        x = len(valor)-1
+        if "\n" in valor[x]:
+            valor[x] = valor[x].replace("\n", "")
+        lista.append(valor)
+    return lista
+def loadData(file):
+    arquivo = open(file, "r")
+    data = toArray(arquivo)
+    arquivo.close()
+    return data
 if '__name__'=='__main__':
     name=sys.args[1] or input()
     conn=sqlite3.connect(name+'.sqlite3')

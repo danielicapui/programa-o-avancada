@@ -21,4 +21,5 @@ insertInto("produtos","nome,valor,categoria_id",produtos)
 buscaTabela("categorias")
 buscaTabela("produtos")
 conn.commit()
+conn.close()
 
