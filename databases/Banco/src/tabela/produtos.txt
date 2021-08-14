@@ -1,0 +1,13 @@
+'arroz',5.20,1
+'macarrao',3.50,1
+'banana',2.00,2
+'linguica',18.80,3
+'sabonete liquido',6.60,4
+'shampoo',4.70,4
+'perfume',9.89,5
+'teclado',120.50,6
+'cadeira',123.40,7
+'bolsa',66.99,8
+'cimento',50.00,9
+'arco composto',2300.00,10
+'blazblue',80.00,11
