@@ -1,6 +1,6 @@
 from utills import *
 
-conn,cur=start('banco')
+conn,cur=start('music')
 criarTabela("tracks","title text,plays integer")
 music=[('trunder',20),
         ('my way',15)]
